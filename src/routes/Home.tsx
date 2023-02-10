@@ -456,7 +456,7 @@ export default function Home() {
             {Array(4)
               .fill("")
               .map((_, i) => (
-                <HStack spacing="6" w="full">
+                <HStack spacing="6" w="full" key={i}>
                   <Box w="30%" rounded="xl" overflow={"hidden"}>
                     <Image
                       w="100px"

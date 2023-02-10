@@ -29,7 +29,7 @@ export default function Layout({
     navigate(-1);
   };
   return (
-    <Box w="full" display={"flex"} justifyContent="center">
+    <Box w="full" display={"flex"} justifyContent="center" position="relative">
       {hasTitle ? (
         <HStack
           position="fixed"
@@ -95,13 +95,15 @@ export default function Layout({
                 </VStack>
               </GridItem>
             </Link>
-            <GridItem>
-              <VStack alignItems={"center"}>
-                <MdPhotoCamera size={24} />
-                <Text>인증</Text>
-              </VStack>
-            </GridItem>
-            <Link to="/">
+            <Link to="/camera">
+              <GridItem>
+                <VStack alignItems={"center"}>
+                  <MdPhotoCamera size={24} />
+                  <Text>인증</Text>
+                </VStack>
+              </GridItem>
+            </Link>
+            <Link to="/community">
               <GridItem>
                 <VStack alignItems={"center"}>
                   <MdSpaceDashboard size={24} />
@@ -109,7 +111,7 @@ export default function Layout({
                 </VStack>
               </GridItem>
             </Link>
-            <Link to="/">
+            <Link to="/profile">
               <GridItem>
                 <VStack alignItems={"center"}>
                   <GrUserSettings size={24} />
