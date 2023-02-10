@@ -4,7 +4,7 @@ const instance = axios.create({
   baseURL:
     process.env.NODE_ENV === "development"
       ? "http://localhost:4000/api/v1/"
-      : "http://localhost:3000",
+      : "https://port-0-stamp-backend-by52fb24lbbufx8n.gksl2.cloudtype.app/api/v1/",
   withCredentials: true,
 });
 
